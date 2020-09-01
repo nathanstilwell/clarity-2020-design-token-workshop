@@ -1,0 +1,28 @@
+{
+  "name": "clarity-design-token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": "true",
+  "scripts": {
+    "b": "npm run build",
+    "build": "style-dictionary build --config ./sd.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "chokidar 'tokens.json' --initial --command 'npm run build'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nathanstilwell/clarity-2020-design-token-workshop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathanstilwell/clarity-2020-design-token-workshop/issues"
+  },
+  "homepage": "https://github.com/nathanstilwell/clarity-2020-design-token-workshop#readme",
+  "devDependencies": {
+    "chokidar-cli": "^2.1.0",
+    "style-dictionary": "^2.10.1"
+  }
+}
