@@ -5,8 +5,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "b": "npm run build",
     "build": "style-dictionary build --config ./sd.config.js",
-    "watch": "chokidar \"tokens.json\" -c \"npm run build\"",
+    "clean": "rimraf dist",
+    "watch": "chokidar 'tokens/**/*.json' --initial --command 'npm run build'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +23,7 @@
   "homepage": "https://github.com/dbanksdesign/clarity-2020-design-token-workshop#readme",
   "devDependencies": {
     "chokidar-cli": "^2.1.0",
+    "rimraf": "^3.0.2",
     "style-dictionary": "^2.10.1"
   }
 }

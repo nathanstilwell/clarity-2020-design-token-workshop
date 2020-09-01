@@ -1,0 +1,8 @@
+{
+  "color": {
+    "brand": {
+      "primary": { "value": "{color.core.pink.700.value}" },
+      "secondary": { "value": "{color.core.aqua.700.value}" }
+    }
+  }
+}

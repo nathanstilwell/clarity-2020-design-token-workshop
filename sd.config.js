@@ -1,13 +1,25 @@
 module.exports = {
-  source: ["tokens.json"],
+  source: ["tokens/**/*.json"],
   platforms: {
-    web: {
+    sass: {
       transformGroup: "scss",
       buildPath: "dist/",
-      files: [{
-        format: "scss/variables",
-        destination: "variables.scss"
-      }]
-    }
-  }
-}
+      files: [
+        {
+          format: "scss/variables",
+          destination: "variables.scss",
+        },
+      ],
+    },
+    css: {
+      transformGroup: "css",
+      buildPath: "dist/",
+      files: [
+        {
+          format: "css/variables",
+          destination: "variables.css",
+        },
+      ],
+    },
+  },
+};

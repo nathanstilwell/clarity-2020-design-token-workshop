@@ -6,12 +6,5 @@
       "large": { "value": 1.5 },
       "xl": { "value": 3 }
     }
-  },
-
-  "color": {
-    "background": {
-      "primary": { "value": "#fff" },
-      "secondary": { "value": "#eee" }
-    }
   }
 }
