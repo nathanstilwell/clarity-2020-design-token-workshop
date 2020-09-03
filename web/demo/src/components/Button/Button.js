@@ -1,14 +1,10 @@
-import React from 'react';
+import React from "react";
 
 // This component uses SCSS and SCSS variables for styling
-import './Button.scss';
+import "./Button.scss";
 
-const Button = ({ children, variant="default" }) => {
-  return (
-    <button className={`clarity-button ${variant}`}>
-      {children}
-    </button>
-  )
-}
+const Button = ({ children, variant = "default" }) => {
+  return <button className={`clarity-button ${variant}`}>{children}</button>;
+};
 
-export default Button
+export default Button;
